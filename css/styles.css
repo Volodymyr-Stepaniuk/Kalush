@@ -1,0 +1,161 @@
+
+:root {
+--main-text:#212121;
+--second-text: #757575;
+--accent-text: #2196F3;
+--white-text:#FFFFFF;
+--black-text: #000000;
+--secondary-btn-color:#F5F4FA;
+}
+body {
+    background-color:#E5E5E5;
+    color: var(--main-text);
+    font-family: Roboto , sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* BUTTON */
+.button {
+    color: var(--main-text) ;
+    background-color: var(--accent-text);
+    cursor: pointer;
+    font-family: inherit;
+} 
+
+.button.secondary {
+color: var(--main-text) ;
+background-color: var(--secondary-btn-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--white-text);
+    background-color: var(--accent-text);
+}
+
+/* Logotip */
+.logo {
+font-family: Raleway, sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+}
+.primary-logo {
+color: var(--accent-text);
+}
+.header-logo {
+    color: var(--black-text);
+}
+.footer-logo {
+    color: var(--white-text);
+}
+
+/* Navigation */
+/* nav link */
+.nav-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text);
+}
+.nav-link:hover,
+.nav-link:focus {
+color: var(--accent-text);
+}
+
+.nav-item .nav-link.current {
+color: var(--accent-text);
+}
+
+/* nav cont */
+.contact {
+color: var(--second-text);
+}
+
+
+/* Main section */
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--white-text);
+}
+/* Hero btn */
+.button.primary {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--white-text) ;
+background-color: var(--accent-text)
+}
+/* Advantage */
+.advantage-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--main-text);
+}
+.advantage-text {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--second-text);
+}
+
+/* Benefits */
+.title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--main-text);
+}
+/* Team */
+
+.team-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--main-text);
+}
+.team-text {
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--second-text);
+}
+/* Footer */
+.foot-link {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+.maps {
+    color: var(--white-text);
+}
