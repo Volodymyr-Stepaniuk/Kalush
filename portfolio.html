@@ -11,119 +11,133 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class="primary-logo logo" href="WebStudio">
-          Web<span class="header-logo">Studio</span>
-        </a>
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="primary-logo logo" href="WebStudio">
+            Web<span class="header-logo">Studio</span>
+          </a>
+          <ul class="nav-item">
+            <li class="nav-list">
+              <a class="nav-link" href="index.html">Студия</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link current" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-list"><a class="nav-link" href="">Контакты</a></li>
+          </ul>
 
-        <ul class="nav-item">
-          <li><a class="nav-link" href="index.html">Студия</a></li>
-          <li>
-            <a class="nav-link current" href="portfolio.html">Портфолио</a>
-          </li>
-          <li><a class="nav-link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <ul>
-        <li>
-          <a class="nav-link contact" href="malito:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-        <li>
-          <a class="nav-link contact" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </li>
-      </ul>
+          <ul class="nav-contact">
+            <li class="nav-list">
+              <a class="nav-link contact" href="malito:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="nav-list">
+              <a class="nav-link contact" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Main buttons-->
-      <section>
-        <ul>
-          <li><button type="button" class="button secondary">Все</button></li>
-          <li>
-            <button type="button" class="button secondary">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="button secondary">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="button secondary">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="button secondary">Маркетинг</button>
-          </li>
-        </ul>
-      </section>
-      <!-- Main Portfolio-->
-      <section>
-        <ul>
-          <li>
-            <img src="./images/PortImg/portfolio1.jpg" alt="Notebook" />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/PortImg/portfolio2.jpg"
-              alt="poster by basketball"
-            />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/PortImg/portfolio3.jpg"
-              alt="Restaurant with Seafood"
-            />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
-          </li>
-          <li>
-            <img src="./images/PortImg/portfolio4.jpg" alt="headphone" />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/PortImg/portfolio5.jpg" alt="Two boxes" />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
-          </li>
-          <li>
-            <img src="./images/PortImg/portfolio6.jpg" alt="Macintosh" />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/PortImg/portfolio7.jpg" alt="bool" />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/PortImg/portfolio8.jpg" alt="Lab profect" />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/PortImg/portfolio9.jpg"
-              alt="Notebook on the table"
-            />
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container port-section">
+        <section>
+          <ul class="btn-item">
+            <li class="btn-list">
+              <button type="button" class="button secondary">Все</button>
+            </li>
+            <li class="btn-list">
+              <button type="button" class="button secondary">Веб-сайты</button>
+            </li>
+            <li class="btn-list">
+              <button type="button" class="button secondary">Приложения</button>
+            </li>
+            <li class="btn-list">
+              <button type="button" class="button secondary">Дизайн</button>
+            </li>
+            <li class="btn-list">
+              <button type="button" class="button secondary">Маркетинг</button>
+            </li>
+          </ul>
+        </section>
+        <!-- Main Portfolio-->
+        <section class="projects">
+          <div class="flex-container">
+            <ul class="projects-item">
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio1.jpg" alt="Notebook" />
+                <h3 class="projects-title">Технокряк</h3>
+                <p class="projects-text">Веб-сайт</p>
+              </li>
+
+              <li class="projects-list">
+                <img
+                  src="./images/PortImg/portfolio2.jpg"
+                  alt="poster by basketball"
+                />
+                <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
+                <p class="projects-text">Дизайн</p>
+              </li>
+              <li class="projects-list">
+                <img
+                  src="./images/PortImg/portfolio3.jpg"
+                  alt="Restaurant with Seafood"
+                />
+                <h3 class="projects-title">Ресторан Seafood</h3>
+                <p class="projects-text">Приложение</p>
+              </li>
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio4.jpg" alt="headphone" />
+                <h3 class="projects-title">Проект Prime</h3>
+                <p class="projects-text">Маркетинг</p>
+              </li>
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio5.jpg" alt="Two boxes" />
+                <h3 class="projects-title">Проект Boxes</h3>
+                <p class="projects-text">Приложение</p>
+              </li>
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio6.jpg" alt="Macintosh" />
+                <h3 class="projects-title">Inspiration has no Borders</h3>
+                <p class="projects-text">Веб-сайт</p>
+              </li>
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio7.jpg" alt="bool" />
+                <h3 class="projects-title">Издание Limited Edition</h3>
+                <p class="projects-text">Дизайн</p>
+              </li>
+              <li class="projects-list">
+                <img src="./images/PortImg/portfolio8.jpg" alt="Lab profect" />
+                <h3 class="projects-title">Проект LAB</h3>
+                <p class="projects-text">Маркетинг</p>
+              </li>
+              <li class="projects-list">
+                <img
+                  src="./images/PortImg/portfolio9.jpg"
+                  alt="Notebook on the table"
+                />
+                <h3 class="projects-title">Growing Business</h3>
+                <p class="projects-text">Приложение</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a class="logo primary-logo" href="WebStudio">
         Web<span class="footer-logo">Studio</span>
       </a>
