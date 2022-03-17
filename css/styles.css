@@ -7,6 +7,7 @@
 --black-text: #000000;
 --secondary-btn-color:#F5F4FA;
 --primary-bg-color:#2F303A;
+--secondary-bg-color:#E5E5E5;
 
 }
 a {
@@ -24,7 +25,7 @@ p {
 
 
 body {
-    background-color:#E5E5E5;
+    background-color:var(--secondary-bg-color);
     color: var(--main-text);
     font-family: Roboto , sans-serif;
 }
@@ -117,13 +118,13 @@ color: var(--second-text);
 
 /* Main section */
 .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
     text-align: center;
-    padding-top: 0;
     background-color: var(--primary-bg-color);
 }
 
 .hero-title {
-padding-top: 200px;
 margin-bottom: 30px;
 margin-top: 0;
 
@@ -154,7 +155,7 @@ background-color: var(--accent-text)
 .advantage {
 padding-bottom: 0;
 }
-.advantage-flex {
+.advantage-flex  {
     display: flex;
     flex-wrap: wrap;
     
@@ -177,6 +178,15 @@ letter-spacing: 0.03em;
 color: var(--second-text);
 }
 
+.advantage-item , .benefits-item {
+    display: flex;
+}
+
+.advantage-list {
+    width: calc((100%-30px) / 4);
+
+}
+
 /* Benefits */
 .title {
 margin-top: 0;
@@ -189,6 +199,15 @@ letter-spacing: 0.03em;
 
 color: var(--main-text);
 }
+.benefits-item {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.benefits-list {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 /* Team */
 .team {
     padding-bottom: 0;
@@ -226,10 +245,24 @@ color: var(--second-text);
 }
 .team-cards:not(:last-child) {
     margin-right: 30px;
-} 
+}
 /* Footer */
 .footer {
     background-color: var(--primary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address-list {
+    margin-bottom: 9px;
+}
+.address-list:last-child {
+    margin-bottom: 0;
 }
 .foot-link {
 font-size: 14px;
@@ -244,11 +277,7 @@ color: rgba(255, 255, 255, 0.6);
 /*          PORTFOLIO CSS */
 
 /* Porto buttons */
- .port-section {
-     margin-top: 94px;
-     margin-bottom: 94px;
 
- }
 .button.secondary {
 font-weight: 500;
 font-size: 16px;
