@@ -6,8 +6,9 @@
 --white-text:#FFFFFF;
 --black-text: #000000;
 --secondary-btn-color:#F5F4FA;
---primary-bg-color:#2F303A;
+--primary-bg-color:#C4C4C4;
 --secondary-bg-color:#E5E5E5;
+--footer-color:#2F303A;
 
 }
 a {
@@ -124,7 +125,22 @@ color: var(--second-text);
     background-color: var(--primary-bg-color);
 }
 
-.hero-title {
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heroimage.jpg);
+   background-size: cover;
+    
+}
+
+
+.hero-title { 
 margin-bottom: 30px;
 margin-top: 0;
 
@@ -136,6 +152,8 @@ text-transform: uppercase;
 
 color: var(--white-text);
 }
+
+
 /* Hero btn */
 .button.primary {
 display: inline-block;
@@ -156,9 +174,8 @@ background-color: var(--accent-text)
 padding-bottom: 0;
 }
 .advantage-flex  {
-    display: flex;
-    flex-wrap: wrap;
-    
+display: flex;
+flex-wrap: wrap; 
 }
 .advantage-title {
 margin-top: 0;
@@ -180,11 +197,26 @@ color: var(--second-text);
 
 .advantage-item , .benefits-item {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .advantage-list {
     width: calc((100%-30px) / 4);
 
+}
+
+.advantage-container {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px; 
+}
+.advan-icon {
+    fill: currentColor;
 }
 
 /* Benefits */
@@ -248,7 +280,7 @@ color: var(--second-text);
 }
 /* Footer */
 .footer {
-    background-color: var(--primary-bg-color);
+    background-color: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
