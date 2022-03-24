@@ -9,6 +9,7 @@
 --primary-bg-color:#C4C4C4;
 --secondary-bg-color:#E5E5E5;
 --footer-color:#2F303A;
+--current-clinets-color:#AFB1B8;
 
 }
 a {
@@ -26,7 +27,7 @@ p {
 
 
 body {
-    background-color:var(--secondary-bg-color);
+ font-size: 14px;
     color: var(--main-text);
     font-family: Roboto , sans-serif;
 }
@@ -55,6 +56,7 @@ body {
 /* Page header  */
 .page-header {
     background-color: var(--white-text);
+    border-bottom: 1px solid #ececec;
 }
 /* Logotip */
 .logo {
@@ -115,7 +117,16 @@ color: var(--accent-text);
 .contact {
 color: var(--second-text);
 }
+.nav-container {
+margin-left: auto;
+}
 
+.svg-icon {
+vertical-align: middle;
+margin-right: 10px;
+fill: currentColor;
+
+}
 
 /* Main section */
 .hero {
@@ -173,10 +184,7 @@ background-color: var(--accent-text)
 .advantage {
 padding-bottom: 0;
 }
-.advantage-flex  {
-display: flex;
-flex-wrap: wrap; 
-}
+
 .advantage-title {
 margin-top: 0;
 margin-bottom: 10px;
@@ -201,22 +209,22 @@ color: var(--second-text);
 }
 
 .advantage-list {
-    width: calc((100%-30px) / 4);
-
+ width: calc((100%-30px) / 4);
+/* border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;  */
 }
-
-.advantage-container {
-   display: flex;
+.advan-icon-contain {
+display: flex;
   justify-content: center;
   align-items: center;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   width: 270px;
-  height: 120px; 
-}
-.advan-icon {
-    fill: currentColor;
+  height: 120px;
+
 }
 
 /* Benefits */
@@ -278,13 +286,85 @@ color: var(--second-text);
 .team-cards:not(:last-child) {
     margin-right: 30px;
 }
+
+
+
+/* Social Team */
+.container-text {
+box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--white-text);
+}
+.team-social-list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.team-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+.team-social-icon {
+fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus{
+    background-color: var(--accent-text);
+    cursor: pointer;
+    color: var(--white-text);
+  
+}
+
+
+
+/* CURRENT CLIENTS  */
+.current-client-list {
+    display: flex;
+    margin-top: 50px;
+}
+.current-client-item:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-links {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 170px;
+height: 92px;
+cursor: pointer;
+
+border: 1px solid var(--current-clinets-color);
+border-radius: 4px;
+color: var(--current-clinets-color);
+
+}
+.current-clients-icons {
+    fill: currentColor;
+}
+.clients-links:hover,
+.clients-links:focus{
+    border-color: var(--accent-text);
+    color: var(--accent-text)
+}
+
 /* Footer */
 .footer {
     background-color: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.footer > .container {
+    display: flex;
+}
 .address {
     margin-top: 20px;
     font-style: normal;
@@ -305,6 +385,50 @@ color: rgba(255, 255, 255, 0.6);
 .maps {
     color: var(--white-text);
 }
+
+/* footer social */
+.container-social-link {
+    margin-left: 70px;
+}
+.footer-title {
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white-text);
+margin: 0;
+}
+.social-list-footer {
+    display: flex;
+    margin-top: 20px;
+    align-items: baseline;
+    justify-content: start;
+
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--white-text);
+  }
+
+.social-item-footer > .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  .user-social-icon {
+      fill: currentColor;
+  }
+  .social-item-footer > .social-link:hover,
+  .social-item-footer > .social-link:focus {
+    background-color: #2196f3;
+  }
+  .social-item-footer + .social-item-footer {
+    margin-left: 10px;
+  }
 
 /*          PORTFOLIO CSS */
 
